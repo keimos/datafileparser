@@ -4,4 +4,4 @@ import pandas as pd
 
 result = pd.read_csv('DeliveryReservationFailureFrom_05_27.csv', usecols=['Request'])
 
-print(result)
+print(result)  # prints results of data read from CSV
