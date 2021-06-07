@@ -13,5 +13,5 @@ try:
     print("Fourth element = %d" %(a[3]))
 
 except IndexError:
-    print("An error occurred")
+    print("An error occurred in the array")
 
