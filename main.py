@@ -4,7 +4,6 @@ from pathlib import Path
 import pandas as pd
 
 # Read CSV and parse specific columns
-csv_file = Path('DeliveryReservationFailureFrom_05_27.csv')
 try:
     result = pd.read_csv(csv_file, usecols=['Request'])
     print(result)  # prints results of data read from CSV
@@ -20,3 +19,7 @@ try:
 
 except IndexError as e:
     print(f"IndexError: {e}")
+
+if __name__ == "__main__":
+    properties_file_path = Path("config.properties")
+    properties = read_properties(properties_file_path)
