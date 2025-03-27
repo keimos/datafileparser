@@ -1,17 +1,20 @@
-# This is a CSV file parser script
+# This script parsess a CSV file and demonstrates listing index
 
 import pandas as pd
 
-result = pd.read_csv('DeliveryReservationFailureFrom_05_27.csv', usecols=['Request'])
-
-print(result)  # prints results of data read from CSV
-
-a = [1, 2, 3]
+# Read CSV and parse specific columns
 try:
-    print("Second element = %d" %(a[1]))
+    result = pd.read_csv('DeliveryReservationFailureFrom_05_27.csv', usecols=['Request'])
+    print(result)  # prints results of data read from CSV
+except FileNotFoundError:
+    print("The specified CSV file could not found")
+except ValueError:
+    print("The specified CSV file is not valid")
 
-    print("Fourth element = %d" %(a[3]))
+element = [1, 2, 3]
+try:
+    print(f"Second element = {element[1]}") # Access the second element of the list
+    print(f"Fourth element = {element[3]}") # Access the fourth element of the list
 
-except IndexError:
-    print("An error occurred in the array")
-
+except IndexError as e:
+    print(f"IndexError: {e}")
