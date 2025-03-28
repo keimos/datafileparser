@@ -1,0 +1,24 @@
+{
+    "exit_code_by_key": {
+        "main.x_read_properties__mutmut_1": 1,
+        "main.x_read_properties__mutmut_2": 1,
+        "main.x_read_properties__mutmut_3": 1,
+        "main.x_read_properties__mutmut_4": 1,
+        "main.x_read_properties__mutmut_5": 1,
+        "main.x_read_properties__mutmut_6": 0,
+        "main.x_read_properties__mutmut_7": 1,
+        "main.x_read_properties__mutmut_8": 1,
+        "main.x_read_properties__mutmut_9": 1,
+        "main.x_read_properties__mutmut_10": 0,
+        "main.x_parse_csv__mutmut_1": 33,
+        "main.x_parse_csv__mutmut_2": 33,
+        "main.x_parse_csv__mutmut_3": 33,
+        "main.x_parse_csv__mutmut_4": 33,
+        "main.x_parse_csv__mutmut_5": 33,
+        "main.x_parse_csv__mutmut_6": 33
+    },
+    "hash_by_function_name": {
+        "read_properties": "5f5997cda9513e2bc9d60450328a6907",
+        "parse_csv": "09bbfc359a1ebe481c6c332e480229da"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "tests_by_mangled_function_name": {
+        "main.x_read_properties": [
+            "tests/test_script.py::test_read_properties_valid_file"
+        ]
+    },
+    "duration_by_test": {
+        "tests/test_script.py::test_read_properties_valid_file": 0.0002763399970717728
+    },
+    "stats_time": 0.939722
+}
