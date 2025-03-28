@@ -1,6 +1,6 @@
 import pytest
 from pathlib import Path
-from main import read_properties, parse_csv
+from src.main import read_properties, parse_csv
 
 def test_read_properties_valid_file(tmp_path):
     # Create a temporary properties file
@@ -10,3 +10,8 @@ def test_read_properties_valid_file(tmp_path):
     # Test function
     result = read_properties(properties_file)
     assert result == {"csv_file_path": "test.csv"}
+
+def test_read_properties_file_not_found():
+    # etst for a missing properties file
+    result = read_properties(Path("non-existent.properties"))
+    assert result == {}
