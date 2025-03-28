@@ -9,7 +9,7 @@ def read_properties(file_path):
     try:
         with open(file_path, "r") as file:
             for line in file:
-                key, value = line.strip().split("_", 1)
+                key, value = line.strip().split("=", 1)
                 properties[key.strip()] = value.strip()
     except FileNotFoundError:
         print("The specified CSV file could not found: {file_path}")
