@@ -18,7 +18,7 @@ def read_properties(file_path):
 def parse_csv(file_path):
     """Parses the CSV file at the given file path and prints its contents."""
     try:
-        result = pd.read_csv(file_path, usecols=["Request"])
+        result = pd.read_csv(file_path, usecols=[1])
         print(result)
     except FileNotFoundError:
         print(f"CSV file not found: {file_path}")

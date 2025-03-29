@@ -205,7 +205,7 @@ x_read_properties__mutmut_orig.__name__ = 'x_read_properties'
 def x_parse_csv__mutmut_orig(file_path):
     """Parses the CSV file at the given file path and prints its contents."""
     try:
-        result = pd.read_csv(file_path, usecols=["Request"])
+        result = pd.read_csv(file_path, usecols=[1])
         print(result)
     except FileNotFoundError:
         print(f"CSV file not found: {file_path}")
@@ -215,7 +215,7 @@ def x_parse_csv__mutmut_orig(file_path):
 def x_parse_csv__mutmut_1(file_path):
     """Parses the CSV file at the given file path and prints its contents."""
     try:
-        result = pd.read_csv(None, usecols=["Request"])
+        result = pd.read_csv(None, usecols=[1])
         print(result)
     except FileNotFoundError:
         print(f"CSV file not found: {file_path}")
@@ -225,7 +225,7 @@ def x_parse_csv__mutmut_1(file_path):
 def x_parse_csv__mutmut_2(file_path):
     """Parses the CSV file at the given file path and prints its contents."""
     try:
-        result = pd.read_csv(file_path, usecols=["XXRequestXX"])
+        result = pd.read_csv(file_path, usecols=[2])
         print(result)
     except FileNotFoundError:
         print(f"CSV file not found: {file_path}")
@@ -235,7 +235,7 @@ def x_parse_csv__mutmut_2(file_path):
 def x_parse_csv__mutmut_3(file_path):
     """Parses the CSV file at the given file path and prints its contents."""
     try:
-        result = pd.read_csv( usecols=["Request"])
+        result = pd.read_csv( usecols=[1])
         print(result)
     except FileNotFoundError:
         print(f"CSV file not found: {file_path}")
@@ -265,7 +265,7 @@ def x_parse_csv__mutmut_5(file_path):
 def x_parse_csv__mutmut_6(file_path):
     """Parses the CSV file at the given file path and prints its contents."""
     try:
-        result = pd.read_csv(file_path, usecols=["Request"])
+        result = pd.read_csv(file_path, usecols=[1])
         print(None)
     except FileNotFoundError:
         print(f"CSV file not found: {file_path}")
